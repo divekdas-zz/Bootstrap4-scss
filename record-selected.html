@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyser Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <a class="navbar-brand" href="dashboard.html">Analyser</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">ANALYSER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="records.html">RECORDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DEVELOPER TOOLS</a>
+                    </li>
+                </ul>
+                <div class="navbar-profile">
+                    <form class="form-inline search-form mr-sm-3">
+                        <input class="form-control search-input shadow-none" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">
+                        <span class="material-icons">search</span>
+                    </button>
+                    </form>
+                    <div class="dash-icons">
+                        <button><i class="material-icons">settings</i></button><button><i class="material-icons">analytics</i></button>
+                    </div>
+                    <div class="dropdown">
+                        <div data-toggle="dropdown" class="user" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">account_circle</i>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="user-info-head">
+            <h1>Welcome, <span>Analyser</span></h1>
+            <button type="button" class="btn btn-primary shadow-sm">New payment</button>
+        </section>
+    </header>
+    <main class="main-container">
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="head-style">Records </h1>
+                    <p>View and edit previous records in the test library</p>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="table-responsive-sm">
+                            <table class="table table-style-1">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">SUBJECT NAME</th>
+                                        <th scope="col">ASSIGNED TO</th>
+                                        <th scope="col">CREATED</th>
+                                        <th scope="col">DISEASES</th>
+                                        <th scope="col">SUBJECT ID</th>
+                                        <th scope="col">STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="modal-tr" data-toggle="modal" data-target="#exampleModal">
+                                        <th scope="row">1</th>
+                                        <td>Inverness McKenzie</td>
+                                        <td><span class="highlight">Dr.Lance Bogrol</span></td>
+                                        <td>24.May.20</td>
+                                        <td>Influenza</td>
+                                        <td>1004</td>
+                                        <td>
+                                            <div class="status active" data-toggle="tooltip" data-placement="bottom" title="Active"><span class="material-icons">how_to_reg</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal-tr" data-toggle="modal" data-target="#exampleModal">
+                                        <th scope="row">2</th>
+                                        <td>Inverness McKenzie</td>
+                                        <td><span class="highlight">Dr.Lance Bogrol</span></td>
+                                        <td>24.May.20</td>
+                                        <td>Influenza</td>
+                                        <td>1004</td>
+                                        <td>
+                                            <div class="status active" data-toggle="tooltip" data-placement="bottom" title="Active"><span class="material-icons">how_to_reg</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal-tr" data-toggle="modal" data-target="#exampleModal">
+                                        <th scope="row">3</th>
+                                        <td>Inverness McKenzie</td>
+                                        <td><span class="highlight">Dr.Lance Bogrol</span></td>
+                                        <td>24.May.20</td>
+                                        <td>Influenza</td>
+                                        <td>1004</td>
+                                        <td>
+                                            <div class="status error" data-toggle="tooltip" data-placement="bottom" title="Warning"><span class="material-icons">assistant_photo</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="modal-tr" data-toggle="modal" data-target="#exampleModal">
+                                        <th scope="row">4</th>
+                                        <td>Inverness McKenzie</td>
+                                        <td><span class="highlight">Dr.Lance Bogrol</span></td>
+                                        <td>24.May.20</td>
+                                        <td>Influenza</td>
+                                        <td>1004</td>
+                                        <td>
+                                            <div class="status warning" data-toggle="tooltip" data-placement="bottom" title="Error"><span class="material-icons">error</span></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Overview</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="overview-card">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                Status
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="data status">test Diagnosis Verified <span class="material-icons">how_to_reg</span></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                ID
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="data">1611 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                Created By
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="data dr">Johel Neiron</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                Assigned to
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="data assign">Dr. Hilary Ouse</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test-results">
+                        <h3 class="sub-head-style">Blood tests</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Metabolites</th>
+                                    <th scope="col">Test Diagnose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">30-11-2019</th>
+                                    <td>15</td>
+                                    <td>Leukocytosis</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30-11-2019</th>
+                                    <td>15</td>
+                                    <td>Leukocytosis</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30-11-2019</th>
+                                    <td>15</td>
+                                    <td>Leukocytosis</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30-11-2019</th>
+                                    <td>15</td>
+                                    <td>Leukocytosis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn more-link float-right">Show all blood tests results <span class="material-icons">keyboard_arrow_right</span></button>
+                        </div>
+                        <div class="overview-card mt-4 mb-0">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    Age
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="data">45</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    Gender
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="data">Male </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    Nationality
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="data dr">Australian</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    MyHealth ID
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="data assign">1234556</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

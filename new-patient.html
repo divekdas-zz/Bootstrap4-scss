@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyser Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <a class="navbar-brand" href="dashboard.html">Analyser</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">ANALYSER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="records.html">RECORDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DEVELOPER TOOLS</a>
+                    </li>
+                </ul>
+                <div class="navbar-profile">
+                    <form class="form-inline search-form mr-sm-3">
+                        <input class="form-control search-input shadow-none" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">
+                            <span class="material-icons">search</span>
+                        </button>
+                    </form>
+                    <div class="dash-icons">
+                        <button><i class="material-icons">settings</i></button><button><i
+                                class="material-icons">analytics</i></button>
+                    </div>
+                    <div class="dropdown">
+                        <div data-toggle="dropdown" class="user" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">account_circle</i>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="user-info-head">
+            <h1>Create <span>New Patient</span></h1>
+            <button type="button" class="btn btn-primary shadow-sm">New payment</button>
+        </section>
+    </header>
+    <main class="main-container">
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="head-style">Patient Details</h1>
+                            <div class="block-style shadow-sm mb-5">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Family Name</label>
+                                                <input type="text" class="form-control rounded-pill" placeholder="Family Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Forname</label>
+                                                <input type="text" class="form-control rounded-pill" placeholder="Forename">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Age</label>
+                                                        <input type="text" class="form-control rounded-pill" placeholder="Age">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Gender</label>
+                                                        <select class="form-control rounded-pill" id="exampleFormControlSelect1">
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Date of Birth</label>
+                                                        <input type="text" class="form-control rounded-pill" type="text" placeholder=" Date of birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Country</label>
+                                                        <select class="form-control rounded-pill" id="exampleFormControlSelect1">
+                                                            <option>India</option>
+                                                            <option>China</option>
+                                                            <option>Japan</option>
+                                                            <option>Russia</option>
+                                                            <option>Britain</option>
+                                                            <option>USA</option>
+                                                            <option>Australia</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Satate</label>
+                                                        <select class="form-control rounded-pill" id="exampleFormControlSelect1">
+                                                            <option>Indian</option>
+                                                            <option>Russian</option>
+                                                            <option>Chinese</option>
+                                                            <option>Japanese</option>
+                                                            <option>British</option>
+                                                            <option>American</option>
+                                                            <option>Australian</option>
+                                                            <option>African</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="patient-form">
+                                <h1 class="head-style">Metabolites <button class="btn add-btn ml-3" id="add-filed"><span class="material-icons">add_circle_outline</span></button></h1>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="row small-grid">
+                                                <div class="col-sm-6">
+                                                    <label>Metabolite name</label>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label>Value</label>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label>Unit</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-main">
+                                                <div class="row small-grid form-input" id="clone-box">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Metabolite name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Value">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Unit">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Date of Testing</label>
+                                                        <input type="text" class="form-control rounded-pill" type="text" placeholder=" Date of Testing" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Ordering institution</label>
+                                                        <input type="text" class="form-control rounded-pill" placeholder="Ordering institution">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Takes medication</label>
+                                                        <select class="form-control rounded-pill" id="exampleFormControlSelect1">
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Diagnosis</label>
+                                                        <input type="text" class="form-control rounded-pill" placeholder="Diagnosis">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>ICD-11 Code</label>
+                                                        <input type="text" class="form-control rounded-pill" placeholder="ICD-11 Code">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Date of Diagnosis</label>
+                                                        <input type="text" class="form-control rounded-pill" type="text" placeholder="Date of Diagnosis" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 text-center d-flex mt-4 justify-content-center">
+                                                    <button type="button" class="btn btn-primary shadow-sm btn-xl mt-2">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="appendloc"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        var cloneCount = 2;
+        $("#add-filed").click(function() {
+            $('#clone-box')
+                .clone()
+                .attr('id', 'clone-box-' + cloneCount++)
+                .insertAfter($('[id^=clone-box]:last'))
+        });
+    </script>
+</body>
+
+</html>

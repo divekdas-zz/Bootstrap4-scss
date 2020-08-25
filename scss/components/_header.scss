@@ -1,0 +1,138 @@
+.navbar{
+    background: $navbar-bg;
+    padding-top: 0;
+    padding-bottom: 0;
+    .navbar-brand{
+        font-size: 1.81rem;
+        font-weight: 800;
+        text-decoration: none;
+        text-transform: uppercase; 
+    }
+    .navbar-nav{
+        a{
+            font-size: 1rem;
+            font-weight: 600;    
+            text-transform: uppercase;
+            @include transition(all 0.2s ease);
+            position: relative;
+            &:after{
+                opacity: 0;
+                visibility: hidden;
+                height: 3px;
+                width: 0%;
+                left: 0;
+                bottom: 0;
+                background: $secondary-color;
+                content: "";
+                position: absolute;
+                display: block;
+                @include transition(all 0.2s ease);
+            }
+            &:hover{
+                &:after{
+                    opacity: 1;
+                    visibility: visible;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .navbar-profile{
+        display: flex;
+    }
+    .search-form{
+        position: relative;
+        .form-control{
+            font-size: 0.81rem;
+            text-transform: uppercase;
+            border-color: rgba($primary-color, 0.2);
+            padding-right: 2rem;
+            height: 2.2rem;
+            @include border-radius(2rem); 
+            &:focus{
+                border-color: $primary-color;
+            }
+        }
+        .btn{
+            position: absolute;
+            right: 6px;
+            top: 15px;
+            background: transparent;
+            color: darken($primary-color, 5%);
+            font-size: 1rem;
+            border: none;
+            padding: 0;
+            &:hover{
+                color:$primary-color;
+            }
+        }
+    }
+    .dash-icons{
+        button{
+            background: none;
+            border: none;
+            color: $secondary-color;
+            font-size: 1.4rem;
+            padding: 0;
+            height: 3.5rem;
+            width: 55px;
+            text-align: center;
+            border-left: solid 1px rgba($primary-color, 0.2);
+            @include transition(all 0.2s ease);
+            i{
+                margin: 5px; 
+                font-size: 1.6rem;
+                position: relative;
+                top: 2px;
+            }
+            &:hover{
+                color: lighten($secondary-color, 8%);
+            }
+        }
+    }
+    .dropdown{
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        border-left: solid 1px rgba($primary-color, 0.3);
+        .user{
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            font-size: 1.7rem;
+            color: $secondary-color;
+            i{
+                font-size: 35px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs) {
+        .navbar-profile{
+            display: block;
+            padding-bottom: 10px;
+            .search-form{
+                margin-bottom: 13px;
+                .btn{
+                    top: 5px;
+                }
+            }
+            .dash-icons{
+                display: inline-block;
+                button{
+                    height: 2.5rem;
+                    width: auto;
+                    border: none;
+                    i{
+                        margin-left: 0;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .dropdown{
+                display: block;
+                float: right;
+                border: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,223 @@
+body{
+    font-family: $primary-font;
+    background: $navbar-bg;
+    font-size: 1rem;
+} 
+a, button, input {
+    outline: none;
+}
+
+// Dropdown
+.dropdown-menu{
+    .dropdown-item{
+        font-size: 0.85rem;
+        padding: .30rem 1rem;
+    }
+}
+.user-info-head{
+    padding: 1rem;
+    background: $sub-head-bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+.main-container{
+    padding: 50px 0;
+}
+.head-style{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+    border-bottom: solid 2px rgba($primary-color, 0.2);
+    padding-bottom: 1rem;
+    font-family: $primary-font;
+}
+.sub-head-style{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: $primary-font;
+}
+.doc-button{
+    border: none;
+    width: 100%;
+    height: 200px;
+    background:$navbar-bg;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    @include border-radius(0.4rem); 
+    @include transition(all 0.2s ease);
+    img{
+        width: 100%;
+        max-width: 75px;
+        opacity: 0.6;
+        margin-bottom: 15px;
+        @include transition(all 0.2s ease);
+    }
+    &:hover {
+        background: $sub-head-bg;
+        img{
+            opacity: 1;
+        }
+    }
+    &.active{
+        background: rgba($primary-color, 0.4);
+    }
+}
+.table{
+    thead{
+        th{
+            background: $navbar-bg ;
+            border-bottom: none;
+            white-space: nowrap;
+        }
+    }
+    th{
+        font-weight: 600;
+        border-width: 1px;
+        font-size: 1rem;
+        border-color: $sub-head-bg ;
+        @include transition(all 0.2s ease);
+    }
+    .modal-tr{
+        cursor: pointer;
+    }
+    tr:hover{
+        td, th{
+            background:rgba($sub-head-bg, 0.2);
+        }
+    }
+    td{
+        vertical-align: middle;
+        font-size: 1rem;
+        border-color: $sub-head-bg ;
+        @include transition(all 0.2s ease);
+    }
+    .material-icons{
+        font-size: 1.4rem;
+    }
+    .highlight{
+        color: darken($primary-color, 5%);
+    }
+    .status{
+        .material-icons{
+            cursor: pointer;
+            font-size: 1.7rem;
+            @include transition(all 0.2s ease);
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        &.active{
+            color: $primary-color;
+        }
+        &.error{
+            color: $error-color;
+        }
+        &.warning{
+            color: $warning-color;
+        }
+    }
+}
+.modal-header{
+    .modal-title{
+        font-family: $primary-font;
+        font-weight: 600;
+    }
+}
+.overview-card{
+    font-size: 1rem;
+    line-height: 2.2rem;
+    margin-bottom: 25px;
+    .data{
+        font-size: 1.2rem;  
+        font-weight: 600;
+        color: #000;
+        display: flex;
+        align-items: center;
+        .material-icons{
+            font-size: 1.35rem;
+            position: relative;
+            top: -2px;
+            margin-left: 5px;
+        }
+    }
+    .status{
+        color: $primary-color;
+    }
+    .dr{
+        color: $secondary-color;
+    }
+    .assign{
+        color: $primary-color;
+    }
+}
+.test-results{
+    .table{
+        border: solid 1px #ccfff3;
+        th, td{
+            font-size: 1rem;
+            padding: .55rem;
+        }
+    }
+}
+.more-link{
+    padding: 0;
+    border: none;
+    display: flex;
+    font-size: 1rem;
+    color: $secondary-color;
+    align-items: center;
+    &:hover{
+        color: darken($secondary-color, 10%);
+    }
+}
+.block-style{
+    background:$gray-color ;
+    padding: 25px;
+    @include border-radius(0.5rem); 
+}
+.patient-form{
+    .row.small-grid{
+        margin-left: 5px;
+        margin-right: 5px;
+        > div{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .head-style{
+        align-items: center;
+        display: flex;
+        .add-btn{
+            background: transparent;
+            border: none;
+            color:darken($primary-color, 5%);
+            font-size: 1.5rem;
+            height: 26px;
+            position: relative;
+            padding: 0; 
+            @include transition(all 0.2s ease);
+            .material-icons{
+                font-size: 1.6rem;
+            }
+            &:hover, &:focus{
+                color:$primary-color;
+            }
+        }
+    }
+}
+.table-style-1{
+    background: #fff;
+}

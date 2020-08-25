@@ -1,0 +1,49 @@
+.btn-primary{
+    background:darken($primary-color, 5%);
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .375rem 1.25rem;
+    i{
+        margin: 1px 0 2px 5px;
+        font-size: 1.1rem;
+    }
+    &:hover, &:focus, &:not(:disabled):not(.disabled):active{
+        background:$primary-color;
+    }
+    &.btn-xl{
+        line-height: 2.5rem;
+        font-size:1.6rem;
+        min-width: 180px;
+        text-align: center;
+    }
+}
+.btn-secondary{
+    background: #ffffff;
+    border: none;
+    font-size: 1;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    color: #6c757d;
+    align-items: center;
+    padding: .375rem 1.25rem;
+    i{
+        margin: 1px 0 2px 5px;
+        font-size: 1.1rem;
+    }
+    &:hover, &:focus, &:not(:disabled):not(.disabled):active{
+        background: none;
+        color: $primary-color;
+    }
+}
+.form-group{
+    .form-control{
+        line-height: 1.2rem;
+        height: 42px;
+    }
+}
